@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>My Journey</title>
+        
+        <!--This stylesheet is for the scrollbar and it's related issues that I was having including some styling for it.
+        It will  be linked in all pages despite some being dedicated to a specific CSS implementation.-->
+        <link rel="stylesheet" type="text/css" href="css/scrollbar.css"/>        
+        
+        <!--link to external css-->
+        <link rel="stylesheet" type="text/css" href="css/onlyCSS.css"/>
+        
+        <!--link to web tab favicon-->
+        <link rel="icon" href="images/shit.png">
+        
+        <!--embedded stylesheet-->
+        <style type="text/css">        
+            ul{
+                margin: 0px;
+                list-style: none;
+                background-color: rgb(20, 20, 20);
+            }
+            
+            .nav li{
+                margin-top, margin-bottom: 5px;
+                display: inline-block;
+                font-weight: bold;    
+            }
+            
+            li a{
+                display: block;
+                padding: 15px 25px;
+                text-decoration: none;
+                color: white;
+            }
+            
+            li a:hover{
+                background-color: black;
+                color: rgb(255, 81, 0);
+            }
+            
+            .active{
+                background-color: rgb(30, 161, 71);
+            }
+            
+        </style>
+        
+    </head>
+    <!--boday start-->
+    <body>
+        
+        <!--main contaciner div-->
+        <div id="container">
+            
+            <!--header with navigation-->
+            <header>
+                <!--header image-->
+                <img src="images/myFace.jpg" id="headImg">
+                
+                <!--nav bar-->
+                <ul class="nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="morning.html">Morning</a></li>
+                    <li><a href="noon.html">Noon</a></li>
+                    <li><a href="evening.html">Evening</a></li>
+                    <li><a href="end.html">End</a></li>
+                </ul>
+            </header>
+            
+            <div id="content">
+                <!--masthead image-->
+                <img id="banner" src="images/banner.jpg" alt="Banner Image" style="width: 100vw;">
+                
+                
+                <!--main content div-->
+                <div class="main">
+                    <h2>
+                        It was like any other Wednesday, I was already tired of the week. It was 6:00am before I woke up.<br/>
+                        I was having a great dream about winning the Superlotto and how I'd spend all that money.<br/>
+                        Then I heard my alarm and forgot that I had work at 7:30am.<br/>
+                        Keep in mind that it takes me about an hour to get to work/school.
+                    </h2>
+                    
+                    <img alt="gif from tenor.com displaying my reaction." src="images/LateShit.gif" style="border-radius: 10px; box-shadow: 3px 3px 6px black;"/>
+                    
+                    <h2>
+                        I jumped up and hurried to get ready to leave out. 
+                    </h2>
+                    
+                    <!--next page arrow-->
+                    <a href="morning.html"><img class="arr" alt="next page arrow" src="images/arrow1.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow1.png'"></a>
+                    
+                </div>
+                
+            </div>
+            
+            
+        <!--container END-->    
+        </div>
+        
+    </body>
+    
+    <!--footer-->
+    <footer>
+        
+        <div>
+            LinedIn:
+            <br/>
+            <a href="https://www.linkedin.com/in/xtra-rf9/" target="_blank">@Robert Fernandez</a>
+        </div>
+        
+        <div>
+            Instagram:
+            <br/>
+            <a href="https://instagram.com/xtra_rf9" target="_blank">@xtra_rf9</a>
+        </div>
+        
+        <div>
+            Gamer Handle:
+            <br/>
+            <a href="https://steamcommunity.com/profiles/76561198395887658/" target="_blank">@RageBloodFire</a>
+        </div>
+        
+    </footer>
+</html>

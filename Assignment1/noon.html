@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>My Journey</title>
+        
+        <!--This stylesheet is for the scrollbar and it's related issues that I was having including some styling for it.
+        It will  be linked in all pages despite some being dedicated to a specific CSS implementation.-->
+        <link rel="stylesheet" type="text/css" href="css/scrollbar.css"/>
+        
+        <!--link to web tab favicon-->
+        <link rel="icon" href="images/shit.png">
+        
+        <!--embedded stylesheet-->
+        <style type="text/css">
+            /*main tag styles*/
+            html{
+                height: 100vh;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            header{
+                position: fixed;
+                width: 100vw;
+                min-width: 775px;
+            }
+
+            body{
+                font-family: Arial, sans;
+                margin: 0px;
+                width: 100vw;
+                height: 100vh;
+                min-width: 775px;
+                overflow: overlay;
+            }
+
+
+            /*header and navbar styles*/
+            #headImg{
+                margin: 3px;
+                margin-right: 20px;
+                width: 43px;
+                border-radius: 50px;
+                float: right;
+
+            }
+
+            ul{
+                margin: 0px;
+                list-style: none;
+                background-color: rgb(20, 20, 20);
+            }
+
+            .nav li{
+                display: inline-block;
+                font-weight: bold;    
+            }
+
+            li a{
+                display: block;
+                padding: 15px 25px;
+                text-decoration: none;
+                color: white;
+            }
+
+            li a:hover{
+                background-color: black;
+                color: rgb(255, 81, 0);
+            }
+
+            .active{
+                background-color: rgb(30, 161, 71);
+            }
+
+
+            /*main content styles*/
+            #content{
+                clear: both;
+                background-image: linear-gradient(to right, rgba(40, 247, 101, 0.3), rgb(242,242,242), rgba(40, 247, 101, 0.3));
+            }
+
+            #banner{
+                margin-top: -5px;
+                width: 100vw;
+                vertical-align: middle;
+                box-shadow: 0px 0px 6px;
+            }
+
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+
+
+            .main{
+                width: 100vw;
+                min-height: 350px;
+                margin: 0px;
+                margin-bottom: 55px;
+                text-align: center;
+            }
+
+            .main h2{
+                margin-top: 0px;
+                padding: 15px;
+            }
+            
+            .main h2:first-child:after{
+                content: "An annoying song was playing through my head the whole day. I don't know why.";
+            }
+
+            /*audio in noon.html*/
+            .main audio{
+                border-radius: 30px;
+                box-shadow: 3px 3px 10px black;
+                width: 500px;
+                margin-bottom: 20px;
+            }
+
+
+            /*arrow  manipulation*/
+            .arr{
+                width: 200px;
+                text-decoration: none;
+                margin-bottom: 25px;
+            }
+
+
+            /*footer styles*/
+            footer{
+                width: 100vw;
+                height: 50px;
+                min-width: 775px;
+                position: fixed;
+                padding-top: 5px;
+                bottom: 0px;
+                background-color: rgb(20, 20, 20);
+                padding-left: 5px;
+                padding-right: 5px;
+                color: white;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            footer a:hover{
+                color: rgb(19, 176, 30);
+            }
+
+            footer div{
+                display: inline-block;
+                margin: 5px;
+            }
+
+            footer div:last-child{
+                float: right;
+                padding-right: 25px;
+            }
+
+            footer div:first-child{
+                float: left;
+                padding-right: 5px;
+            }
+
+
+
+            /*media query*/
+            @media only screen and (max-width: 780px){
+                .nav li{
+                    font-size: 24px;
+                }
+
+                #headImg{
+                    width: 55px;
+                    margin-top: 0px;
+                }
+
+                footer{
+                    font-size: 17px;
+                }
+
+                footer div:last-child{
+                    padding-right: 35px;
+                }
+
+                .main{
+                    min-width: 780px;
+                }
+
+                #banner{
+                    min-width: 780px;
+                    margin-top: 10px;
+                }
+            }
+       
+        </style>
+        
+    </head>
+    <!--boday start-->
+    <body>
+        
+        <!--main contaciner div-->
+        <div id="container">
+            
+            <!--header with navigation-->
+            <header>
+                <!--header image-->
+                <img src="images/myFace.jpg" id="headImg">
+                
+                <!--nav bar-->
+                <ul class="nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="morning.html">Morning</a></li>
+                    <li><a href="noon.html"  class="active">Noon</a></li>
+                    <li><a href="evening.html">Evening</a></li>
+                    <li><a href="end.html">End</a></li>
+                </ul>
+            </header>
+            
+            <div id="content">
+                <!--masthead image-->
+                <img id="banner" src="images/banner.jpg" alt="Banner Image">
+                
+                <!--main content div-->
+                <div class="main">
+                    <h2>
+                        I made it to school, despite being late for work and missing my scheduled time entirely.<br/>
+                        The day was slow.<br/>
+                        I went to my classes and struggled to stay awake by time noon rolled around.<br/>
+                        Lunch was ok, but I really wanted to get Burger King. <em>My pocket disagreed though.</em> <br/>
+                        I played UNO through my Math class at 2pm and slelpt through my Law class at 4pm.<br/>
+                        <br/>
+                    </h2>
+                    
+                    <!--audio-->
+                    <audio controls>
+                        <source src="audio/Billy_Marchiafava_-_Bad_Boy_01.mp3" type="audio/mpeg">
+                    </audio>                    
+                    
+                    <h2>
+                        After all that, the day was coming to an end.<br/>
+                        Time to go home.
+                    </h2>
+                    
+                    <!--next page arrow-->
+                    <a href="evening.html"><img class="arr" alt="next page arrow" src="images/arrow1.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow1.png'"></a>
+                    
+                </div>
+                
+            </div>
+            
+        <!--container END-->    
+        </div>
+        
+    </body>
+    
+    <!--footer-->
+    <footer>
+        
+        <div>
+            LinedIn:
+            <br/>
+            <a href="https://www.linkedin.com/in/xtra-rf9/" target="_blank">@Robert Fernandez</a>
+        </div>
+        
+        <div>
+            Instagram:
+            <br/>
+            <a href="https://instagram.com/xtra_rf9" target="_blank">@xtra_rf9</a>
+        </div>
+        
+        <div>
+            Gamer Handle:
+            <br/>
+            <a href="https://steamcommunity.com/profiles/76561198395887658/" target="_blank">@RageBloodFire</a>
+        </div>
+        
+    </footer>
+</html>

@@ -1,0 +1,183 @@
+/*main tag styles*/
+html{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    min-width: 775px;
+}
+
+body{
+    font-family: Arial, sans;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    min-width: 775px;
+    overflow: overlay;
+}
+
+
+/*header and navbar styles*/
+#headImg{
+    margin: 3px;
+    margin-right: 20px;
+    width: 43px;
+    border-radius: 50px;
+    float: right;  
+}
+
+ul{
+    margin: 0px;
+    list-style: none;
+    background-color: rgb(20, 20, 20);
+}
+
+.nav li{
+    display: inline-block;
+    font-weight: bold;    
+}
+
+li a{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    background-color: black;
+    color: rgb(255, 81, 0);
+}
+
+.active{
+    background-color: rgb(30, 161, 71);
+}
+
+
+
+/*main content styles*/
+#content{
+    clear: both;
+    background-image: linear-gradient(to right, rgba(40, 247, 101, 0.3), rgb(242,242,242), rgba(40, 247, 101, 0.3));
+}
+
+#banner{
+    margin-top: -5px;
+    width: 100vw;
+    vertical-align: middle;
+    box-shadow: 0px 0px 6px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main{
+    width: 100vw;
+    min-height: 350px;
+    margin: 0px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.main h2{
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.mf{
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    margin-bottom: 30px;
+}
+
+/*video in morning.html*/
+.main video{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    width: 500px;
+    height: 500px;
+}
+
+
+/*arrow  manipulation*/
+.arr{
+    width: 200px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+
+
+/*footer styles*/
+footer{
+    width: 100vw;
+    height: 50px;
+    min-width: 775px;
+    position: fixed;
+    padding-top: 5px;
+    bottom: 0px;
+    background-color: rgb(20, 20, 20);
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a:hover{
+    color: rgb(19, 176, 30);
+}
+
+footer div{
+    display: inline-block;
+    margin: 5px;
+}
+
+footer div:last-child{
+    float: right;
+    padding-right: 25px;
+}
+
+footer div:first-child{
+    float: left;
+    padding-right: 5px;
+}
+
+
+
+/*media query*/
+@media only screen and (max-width: 780px){
+    .nav li{
+        font-size: 24px;
+    }
+    
+    #headImg{
+        width: 55px;
+        margin-top: 0px;
+    }
+    
+    footer{
+        font-size: 17px;
+    }
+    
+    footer div:last-child{
+        padding-right: 35px;
+    }
+    
+    .main{
+        min-width: 780px;
+    }
+    
+    #banner{
+        min-width: 780px;
+        margin-top: 10px;
+    }
+}
